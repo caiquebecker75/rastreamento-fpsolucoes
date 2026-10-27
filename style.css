@@ -230,10 +230,12 @@ h1,h2,h3{font-family:'Rubik',sans-serif;font-weight:800;letter-spacing:-.02em;li
 .contato{background:rgba(255,255,255,.07);padding:38px 36px 34px;backdrop-filter:blur(2px);
   clip-path:polygon(0 0,calc(100% - 38px) 0,100% 38px,100% 100%,38px 100%,0 calc(100% - 38px))}
 .contato h3{font-size:22px;margin-bottom:24px}
-.contato .pessoa{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid rgba(255,255,255,.14);display:grid;gap:3px}
+.contato .pessoa{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14);display:grid;gap:3px}
 .contato .pessoa b{font-family:'Rubik',sans-serif;font-size:19px}
 .contato .pessoa small{font-size:13px;color:rgba(255,255,255,.6)}
 .contato .pessoa a{font-size:16px;color:var(--coral);font-weight:500;margin-top:4px}
+.contato .pessoa a.mail{font-size:14px;color:rgba(255,255,255,.72);font-weight:400;margin-top:1px}
+.contato .pessoa a.mail:hover{color:var(--coral)}
 .contato .pessoa a:hover{color:#fff}
 .contato .linha{display:grid;gap:3px;margin-bottom:26px}
 .contato .linha small{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:700}
