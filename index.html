@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rastreamento de PDV · FP Soluções × 75 LAB</title>
+<meta name="description" content="Um QR code em cada peça de PDV: onde o material foi instalado, quem instalou e quando, em dez telas simples.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M0 0h24l8 8v24H8L0 24Z' fill='%231D274E'/%3E%3Cpath d='M9 8h14v4H13v4h8v4h-8v6H9Z' fill='%23F94C30'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rastreamento de PDV · FP Soluções × 75 LAB">
+<meta property="og:description" content="A FP Soluções produz a peça. A 75 LAB prova que ela chegou na loja.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div class="cursor" id="cursor" aria-hidden="true"><span class="ctxt" id="ctxt"></span></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="i-arr" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" d="M4 12h15M13.5 6.5 19.5 12l-6 5.5"/></symbol>
+  <symbol id="i-l" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square" d="M20 12H5M10.5 6.5 5 12l5.5 5.5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M3.5 3.5h7v7h-7zM13.5 3.5h7v7h-7zM3.5 13.5h7v7h-7zM13.5 13.5h7v7h-7z"/></g></symbol>
+  <symbol id="i-no" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter" d="m4 12.5 5.5 5.5L20 6.5"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3.5 3.5h6.5V10H3.5zM14 3.5h6.5V10H14zM3.5 14h6.5v6.5H3.5z"/><path stroke-linecap="square" d="M14 14h2.5v2.5M20.5 14v.01M14 20.5h.01M17.5 18v2.5h3v-3.2"/></g></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="miter"><path d="M3 8.5h4.2L9 6h6l1.8 2.5H21V20H3z"/><circle cx="12" cy="14" r="3.6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="miter"><path d="M12 21.5s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.6"/></g></symbol>
+  <symbol id="i-dash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="miter"><path d="M2.5 3.5h19v14h-19zM8 21h8M12 17.5V21"/><path stroke-linecap="square" d="M6.5 13l3-3.5 3 2 4.5-5"/></g></symbol>
+  <symbol id="i-live" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square"><circle cx="12" cy="12" r="2.4" fill="currentColor"/><path d="M7.8 7.8a6 6 0 0 0 0 8.4M16.2 7.8a6 6 0 0 1 0 8.4M4.9 4.9a10 10 0 0 0 0 14.2M19.1 4.9a10 10 0 0 1 0 14.2"/></g></symbol>
+ </defs>
+</svg>
+
+<div id="stage">
+ <div id="prog"></div>
+
+ <!-- 01 ................................................................ capa -->
+ <section class="slide t-gelo s-capa act" id="capa" data-title="Capa" data-chap="Rastreamento de PDV">
+  <div class="cap-l">
+   <div class="eyebrow rv">FP Soluções × 75 LAB</div>
+   <h1 class="h1 rv" style="--d:1">O material avisa<br>quando <span class="mark">chega</span><br>na loja.</h1>
+   <p class="lead rv" style="--d:2">Um QR code impresso em cada peça. O promotor lê com a câmera do celular e você vê, no mesmo dia, em qual loja a peça foi instalada.</p>
+   <div class="cta rv" style="--d:3">
+    <button class="btn" data-go="passos">Ver como funciona <svg width="18" height="18"><use href="#i-arr"/></svg></button>
+    <button class="btn alt" data-go="preco">Quanto custa</button>
+   </div>
+   <div class="selos rv" style="--d:4">
+    <div><b>R$ 0,30</b><span>por peça rastreada</span></div>
+    <div><b>0</b><span>aplicativo para baixar</span></div>
+    <div><b>1 dia</b><span>para começar</span></div>
+   </div>
+  </div>
+  <div class="cap-r">
+   <div class="chapa"></div>
+   <img class="marca-dagua" src="img/fp-simbolo-branco.png" alt="">
+   <figure class="fone cap-fone rv" style="--d:2"><img src="img/cel-registro.webp" alt="Tela de registro da instalação no celular do promotor"></figure>
+   <div class="etiq rv" style="--d:5"><i></i>registro às 10h42 · Atacadão Bauru</div>
+  </div>
+ </section>
+
+ <!-- 02 ............................................................ problema -->
+ <section class="slide t-branco s-problema" id="problema" data-title="O problema" data-chap="O problema">
+  <div class="faixa-lat"><span>hoje</span></div>
+  <div class="topo">
+   <h2 class="h2 rv" style="--d:1">A peça sai da produção<br>e a história <span class="sub">acaba aqui.</span></h2>
+   <p class="lead rv" style="--d:2">Da expedição até a gôndola, o material atravessa transportadora, equipe de campo e loja. Em nenhum desses pontos alguém assina embaixo.</p>
+  </div>
+  <div class="perguntas">
+   <div class="pq rv" style="--d:3"><i>?</i><b>Chegou na loja certa</b><span>O material saiu no caminhão e ninguém consegue dizer onde ele parou.</span></div>
+   <div class="pq rv" style="--d:4"><i>?</i><b>Foi montado direito</b><span>Cada promotor monta de um jeito, e a marca aparece torta na gôndola.</span></div>
+   <div class="pq rv" style="--d:5"><i>?</i><b>Continua lá depois de um mês</b><span>O material some da loja e a conta só fecha no inventário, tarde demais.</span></div>
+  </div>
+  <p class="pe rv" style="--d:6">Hoje a resposta vem por <b>foto solta no grupo de WhatsApp</b>, sem loja, sem hora e sem saber quem instalou. Quando vem.</p>
+ </section>
+
+ <!-- 03 ............................................................... a ideia -->
+ <section class="slide t-gelo s-ideia" id="ideia" data-title="A ideia" data-chap="A ideia">
+  <div class="ide-l">
+   <div class="eyebrow rv">A ideia</div>
+   <h2 class="h2 rv" style="--d:1">Um <span class="mark">QR code</span><br>em cada peça.</h2>
+   <p class="lead rv" style="--d:2">A FP Soluções já produz e entrega a peça. O código entra junto com a arte, no mesmo fluxo, sem mudar nada na produção.</p>
+   <ul class="linhas rv" style="--d:3">
+    <li><svg><use href="#i-ok"/></svg><span>Um código diferente para cada peça</span></li>
+    <li><svg><use href="#i-ok"/></svg><span>Impresso na arte ou em etiqueta aplicada</span></li>
+    <li><svg><use href="#i-ok"/></svg><span>Abre direto na câmera do celular, sem aplicativo</span></li>
+   </ul>
+  </div>
+  <div class="ilu rv" style="--d:2">
+   <div class="qr"><svg viewBox="0 0 24 24"><use href="#i-qr"/></svg></div>
+   <span class="eti e1">cada peça, um código</span>
+   <span class="eti e2">sem aplicativo</span>
+   <span class="eti e3">leu, registrou</span>
+  </div>
+ </section>
+
+ <!-- 04 ......................................................... como funciona -->
+ <section class="slide t-branco s-passos" id="passos" data-title="Como funciona" data-chap="Como funciona">
+  <div class="cab">
+   <div class="eyebrow rv">Como funciona</div>
+   <h2 class="h2 rv" style="--d:1">Quatro passos. <span class="sub">Quatro segundos.</span></h2>
+  </div>
+  <div class="fila">
+   <div class="p rv" style="--d:2"><span class="n">01</span><div class="ico"><svg><use href="#i-qr"/></svg></div><b>A peça sai com o código</b><span>Aplicado junto com a arte, na produção da FP Soluções.</span></div>
+   <div class="p rv" style="--d:3"><span class="n">02</span><div class="ico"><svg><use href="#i-cam"/></svg></div><b>O promotor aponta a câmera</b><span>Na loja, sem baixar nada e sem criar conta.</span></div>
+   <div class="p rv" style="--d:4"><span class="n">03</span><div class="ico"><svg><use href="#i-pin"/></svg></div><b>Confirma a loja e tira a foto</b><span>O celular manda junto a localização e a hora.</span></div>
+   <div class="p rv" style="--d:5"><span class="n">04</span><div class="ico"><svg><use href="#i-dash"/></svg></div><b>Você vê no painel</b><span>Na mesma hora, com mapa, foto e quem instalou.</span></div>
+  </div>
+  <p class="pe rv" style="--d:6">O trabalho de quem está na loja muda em <b>quatro segundos</b>. O resto acontece sozinho.</p>
+ </section>
+
+ <!-- 05 ..................................................... quem instala vê -->
+ <section class="slide t-gelo s-celular" id="celular" data-title="Na loja" data-chap="Na loja">
+  <div class="cel-l">
+   <div class="eyebrow rv">Na loja</div>
+   <h2 class="h2 rv" style="--d:1">Quem instala abre o código<br>e vê <span class="mark">como montar.</span></h2>
+   <p class="lead rv" style="--d:2">O mesmo QR que registra a instalação ensina a montar a peça. O manual vai junto com o material, no bolso de quem está na loja.</p>
+   <ul class="lista rv" style="--d:3">
+    <li><i></i>Montagem passo a passo, com foto de cada etapa</li>
+    <li><i></i>Vídeo curto da peça sendo montada</li>
+    <li><i></i>A peça em 3D, em tamanho real no chão da loja</li>
+    <li><i></i>Checklist do que conferir antes de sair</li>
+   </ul>
+  </div>
+  <div class="fones">
+   <figure class="fone f1 rv" style="--d:3"><img src="img/cel-capa.webp" alt="Página da peça no celular"></figure>
+   <figure class="fone f2 rv" style="--d:4"><img src="img/cel-montagem.webp" alt="Passo a passo de montagem no celular"></figure>
+  </div>
+ </section>
+
+ <!-- 06 ............................................................... painel -->
+ <section class="slide t-branco s-painel" id="painel" data-title="O painel" data-chap="O painel">
+  <div class="topo">
+   <div>
+    <div class="eyebrow rv">O painel</div>
+    <h2 class="h2 rv" style="--d:1">Tudo o que foi instalado,<br><span class="sub">em uma tela.</span></h2>
+   </div>
+   <p class="lead rv" style="--d:2">Cada leitura vira número, mapa e foto na mesma hora. Ninguém precisa montar planilha depois da campanha.</p>
+  </div>
+  <figure class="shot rv" style="--d:3"><img src="img/tela-painel.webp" alt="Painel com os indicadores da campanha"></figure>
+ </section>
+
+ <!-- 07 ....................................................... link do cliente -->
+ <section class="slide t-marinho s-link" id="link" data-title="O cliente acompanha" data-chap="O cliente">
+  <div class="lk-l">
+   <div class="eyebrow rv">O seu cliente</div>
+   <h2 class="h2 rv" style="--d:1">Ele acompanha ao vivo,<br>sem senha e <span class="mark">sem conta.</span></h2>
+   <p class="lead rv" style="--d:2">Você manda um link. A marca vê a instalação acontecendo, do celular, e o acesso é bloqueado quando a campanha termina.</p>
+   <div class="selos-lin rv" style="--d:4">
+    <div><b>Ao vivo</b><span>atualiza a cada leitura</span></div>
+    <div><b>Sem aplicativo</b><span>abre no navegador</span></div>
+    <div><b>No seu controle</b><span>você bloqueia quando quiser</span></div>
+   </div>
+  </div>
+  <figure class="shot rv" style="--d:3"><img src="img/tela-cliente.webp" alt="Página que o cliente acompanha ao vivo"></figure>
+ </section>
+
+ <!-- 08 ................................................................ preço -->
+ <section class="slide t-gelo s-preco" id="preco" data-title="Quanto custa" data-chap="Investimento">
+  <div class="pr-l">
+   <div class="eyebrow rv">Investimento</div>
+   <h2 class="h2 rv" style="--d:1">Um preço só,<br>sem tabela <span class="sub">para decorar.</span></h2>
+   <p class="lead rv" style="--d:2">O valor é por peça rastreada, do primeiro pedido ao milésimo, com tudo incluído.</p>
+   <ul class="linhas rv" style="--d:3">
+    <li><svg><use href="#i-ok"/></svg><span>Código aplicado e a página de montagem</span></li>
+    <li><svg><use href="#i-ok"/></svg><span>Painel com mapa, foto e exportação</span></li>
+    <li><svg><use href="#i-ok"/></svg><span>Link ao vivo para o cliente</span></li>
+   </ul>
+  </div>
+  <div class="caixa rv" style="--d:3">
+   <small>Por peça rastreada</small>
+   <div class="num"><em>R$</em>0,30</div>
+   <p>Em 10 mil peças, <b>R$ 3.000</b> na campanha inteira.</p>
+   <div class="obs">Sem mensalidade e sem cobrança por acesso. A produção da peça segue na proposta da FP Soluções.</div>
+  </div>
+ </section>
+
+ <!-- 09 ........................................................... tag ao vivo -->
+ <section class="slide t-branco s-tag" id="tag" data-title="Quando precisa de mais" data-chap="Passo seguinte">
+  <div class="cab">
+   <div class="eyebrow rv">Quando precisa de mais</div>
+   <h2 class="h2 rv" style="--d:1">O código conta o que <span class="sub">já aconteceu.</span> A tag conta o que <span class="mark">está acontecendo.</span></h2>
+  </div>
+  <div class="duo">
+   <div class="col rv" style="--d:2">
+    <h3><svg><use href="#i-qr"/></svg>QR code na peça</h3>
+    <p>Alguém precisa ler. O dado nasce no momento da instalação.</p>
+    <ul>
+     <li>Prova que chegou e foi montado</li>
+     <li>Foto da loja e localização</li>
+     <li>Ideal para campanha de ciclo curto</li>
+    </ul>
+   </div>
+   <div class="col on rv" style="--d:3">
+    <h3><svg><use href="#i-live"/></svg>Tag ao vivo</h3>
+    <p>Ninguém precisa ler. A peça avisa sozinha onde está, do CD até a loja.</p>
+    <ul>
+     <li>Onde o material está agora</li>
+     <li>Aviso quando sai da loja</li>
+     <li>Ideal para material de valor, que roda meses</li>
+    </ul>
+   </div>
+  </div>
+  <p class="pe rv" style="--d:4">Comece pelo QR code. A tag entra depois, só nas peças que valem o acompanhamento ao vivo.</p>
+ </section>
+
+ <!-- 10 ................................................................ fecho -->
+ <section class="slide t-marinho s-fim" id="fim" data-title="A parceria" data-chap="A parceria">
+  <div class="fim-l">
+   <div class="eyebrow rv">A parceria</div>
+   <h2 class="h2 rv" style="--d:1">A FP Soluções produz.<br>A 75 LAB <span class="mark">prova.</span></h2>
+   <p class="lead rv" style="--d:2">O material continua saindo da FP do mesmo jeito, com o mesmo prazo. O que muda é que agora ele chega na loja contando onde foi parar.</p>
+   <div class="papeis rv" style="--d:3">
+    <div class="papel"><img src="img/fp-logo-branco.png" alt="FP Soluções para o PDV"><span>Projeto, produção, impressão e entrega do material no ponto de venda</span></div>
+    <div class="papel"><img class="l75" src="img/logo-75lab-branco.png" alt="75 LAB"><span>Código, página de montagem, painel de execução e link do cliente</span></div>
+   </div>
+  </div>
+  <div class="contato rv" style="--d:4">
+   <h3>Falar com a gente</h3>
+   <div class="pessoa">
+    <b>Vanessa Morelli</b>
+    <small>Executiva de contas · 75 LAB</small>
+    <a href="mailto:vanessa.morelli@75lab.com.br">vanessa.morelli@75lab.com.br</a>
+   </div>
+   <div class="pessoa">
+    <b>Caique Becker</b>
+    <small>Direção · 75 LAB</small>
+    <a href="https://wa.me/5511986765634" target="_blank" rel="noopener">(11) 98676-5634</a>
+   </div>
+   <div class="linha"><small>Começar</small><b>Escolher a campanha e gerar os códigos</b></div>
+   <a class="btn" href="https://wa.me/5511986765634?text=Ol%C3%A1%2C%20quero%20falar%20sobre%20o%20rastreamento%20de%20PDV%20da%20FP%20Solu%C3%A7%C3%B5es%20com%20a%2075%20LAB." target="_blank" rel="noopener">Falar no WhatsApp <svg width="18" height="18"><use href="#i-arr"/></svg></a>
+  </div>
+ </section>
+
+ <!-- HUD -->
+ <div id="hud">
+  <div class="hud-logo">
+   <img class="lg-claro" src="img/fp-logo-marinho.png" alt="FP Soluções para o PDV">
+   <img class="lg-escuro" src="img/fp-logo-branco.png" alt="FP Soluções para o PDV" hidden>
+   <span class="x">×</span>
+   <img class="l75 lg-claro" src="img/logo-75lab-preto.png" alt="75 LAB">
+   <img class="l75 lg-escuro" src="img/logo-75lab-branco.png" alt="75 LAB" hidden>
+  </div>
+  <div class="hud-foot">
+   <span class="who" id="who"><b>FP Soluções × 75 LAB</b> · Rastreamento de PDV</span>
+   <div class="hud-nav">
+    <button class="idx" id="btnMenu"><svg><use href="#i-grid"/></svg>Índice</button>
+    <button id="btnPrev" aria-label="Anterior"><svg><use href="#i-l"/></svg></button>
+    <span class="cnt" id="cnt">01 <i>/ 10</i></span>
+    <button id="btnNext" aria-label="Próxima"><svg><use href="#i-arr"/></svg></button>
+   </div>
+  </div>
+ </div>
+
+ <div id="menu">
+  <h3>Índice</h3>
+  <button class="close" id="menuClose" aria-label="Fechar"><svg><use href="#i-no"/></svg></button>
+  <div id="menuList"></div>
+ </div>
+</div>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>
