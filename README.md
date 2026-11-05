@@ -1,6 +1,6 @@
 # Rastreamento de PDV · FP Soluções × 75 LAB
 
-Apresentação de **10 telas** que explica, em linguagem simples, como o QR code aplicado na peça
+Apresentação de **9 telas** que explica, em linguagem simples, como o QR code aplicado na peça
 de PDV mostra onde o material foi instalado, quem instalou e quando.
 
 ## Link público
@@ -10,15 +10,18 @@ https://projetos.75lab.com.br/rastreamento-fpsolucoes/
 Versões irmãs do mesmo produto, com outras identidades:
 
 - 75 LAB (16 telas): https://projetos.75lab.com.br/rastreamento-75lab/
-- NEOBAND (10 telas): https://projetos.75lab.com.br/rastreamento-neoband/
+- NEOBAND (9 telas): https://projetos.75lab.com.br/rastreamento-neoband/
 
 Mudança de conteúdo precisa ser aplicada nos três repositórios.
 
-## As dez telas
+## As nove telas
 
 Capa · o problema de hoje · a ideia do QR code · como funciona em quatro passos ·
-o que o promotor vê no celular · o painel · o link ao vivo do cliente · quanto custa ·
+o que o promotor vê no celular · o painel · o link ao vivo do cliente ·
 quando a tag ao vivo entra · a parceria e os contatos.
+
+Sem tela de preço: o valor por peça fica fora desta apresentação, a pedido do Caique (05/11/2026),
+como já estava na versão NEOBAND.
 
 A tela final traz **Vanessa Morelli** (executiva de contas) e **Caique Becker**, os dois da 75 LAB.
 

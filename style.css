@@ -186,20 +186,6 @@ h1,h2,h3{font-family:'Rubik',sans-serif;font-weight:800;letter-spacing:-.02em;li
 .s-link .shot{box-shadow:0 34px 80px rgba(0,0,0,.4)}
 
 /* ====================================================== 08 preço ========= */
-.s-preco{display:grid;grid-template-columns:1fr 470px;gap:70px;align-items:center}
-.pr-l .h2{margin-top:20px}
-.pr-l .lead{margin-top:24px}
-.s-preco .caixa{background:var(--marinho);color:#fff;padding:52px 48px 44px;
-  clip-path:polygon(0 0,calc(100% - 46px) 0,100% 46px,100% 100%,46px 100%,0 calc(100% - 46px))}
-.s-preco .caixa small{font-family:'Rubik',sans-serif;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--coral)}
-.s-preco .num{font-family:'Rubik',sans-serif;font-size:112px;font-weight:800;line-height:1;margin:14px 0 18px;letter-spacing:-.03em}
-.s-preco .num em{font-style:normal;font-size:38px;margin-right:10px;vertical-align:super;color:rgba(255,255,255,.7)}
-.s-preco .caixa p{font-size:18px;color:rgba(255,255,255,.86)}
-.s-preco .caixa p b{color:#fff}
-.s-preco .obs{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);font-size:14px;line-height:1.6;
-  color:rgba(255,255,255,.62)}
-
 /* ======================================================== 09 tag ========= */
 .s-tag{display:flex;flex-direction:column;justify-content:center;gap:52px;padding-bottom:150px}
 .s-tag .cab .h2{margin-top:20px;max-width:1180px}
